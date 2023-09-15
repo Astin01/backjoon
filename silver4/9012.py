@@ -4,18 +4,18 @@ for _ in range(int(input())):
     for ch in input():
         if ch == '(':
             stk.append(ch)
-
         else:
             if stk:
                 stk.pop()
             else:
                 isVPS = False
+                # break # 굳이 더 실행할 필요가 없어으므로
     if stk:
         isVPS = False
     if isVPS:
         print('YES')
     else:
-        print('NO')
+        print('NO')  # print('YES' if  isVPS else 'NO')로 줄일 수 있었음
 
 
 # t번 반복한다.
