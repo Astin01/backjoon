@@ -9,7 +9,7 @@ for _ in range(int(input())):
                 stk.pop()
             else:
                 isVPS = False
-                # break # 굳이 더 실행할 필요가 없어으므로
+                break # 굳이 더 실행할 필요가 없으므로
     if stk:
         isVPS = False
     if isVPS:
